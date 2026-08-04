@@ -1,1 +1,15 @@
-1
+module gates (
+    input a, b,
+    output and_out, or_out, not_out,
+    xor_out, nand_out, nor_out, xnor_out
+);
+
+    assign and_out = a & b;
+    assign or_out  = a | b;
+    assign not_out = !a;
+    assign xor_out = a ^ b;
+    assign nand_out = ~(a & b);
+    assign nor_out = ~(a | b);
+    assign xnor_out = a ~^ b ;
+
+endmodule
