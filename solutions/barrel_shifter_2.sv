@@ -10,7 +10,7 @@ module barrel_shifter (
         if (left_right) begin
             data_out = shift_mode ? (data_in <<< shift_bits) : (data_in << shift_bits);
         end else begin
-            data_out = shift_mode ? (data_in >>> shift_bits) : (data_in >> shift_bits);
+            data_out = shift_mode ? ($signed(data_in) >>> shift_bits) : (data_in >> shift_bits);
         end
     end
 
