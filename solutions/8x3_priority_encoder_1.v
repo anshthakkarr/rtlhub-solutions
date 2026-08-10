@@ -1,6 +1,6 @@
 module priority_encoder_8x3 (
-    input [7:0] in,
-    output logic [2:0] out
+    input  [7:0] in,
+    output [2:0] out
 );
 
 always_comb begin
