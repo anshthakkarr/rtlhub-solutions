@@ -1,6 +1,6 @@
 # rtlhub-solutions
 
-This repository contains my solutions to the problems on [RTLHub](https://rtlhub.com). Commits are maintained by the automation scripts in my `rtlhub-sync` repository.
+This repository contains my solutions to the problems on [RTLHub](https://rtlhub.com). Commits are made automatically by the scripts in my `rtlhub-sync` repository.
 
 ## Repo Structure
 All solutions are stored within the `solutions/` directory:
