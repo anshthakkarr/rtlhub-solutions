@@ -1,14 +1,15 @@
-module dff_sync_reset (
-    input clk, reset, d,
-    output logic q
+module updown_counter (
+    input clk, reset, up_down,
+    output logic [3:0] count
 );
 
-always_ff @(posedge clk) begin
-    if (reset) begin 
-        q <= 0;
+always_ff @(posedge clk or posedge reset) begin
+    if (reset) begin
+        count <= 4'h0;
+    end else if (up_down) begin
+        count <= count + 1;
     end else begin
-        q <= d;
+        count <= count - 1;
     end
-end 
-
+end
 endmodule
